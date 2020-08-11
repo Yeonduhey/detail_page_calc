@@ -1,0 +1,281 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+header,
+section,
+article,
+aside,
+nav,
+main,
+footer {
+    display: block;
+}
+
+header:after,
+section:after,
+article:after,
+aside:after,
+nav:after,
+main:after,
+footer:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
+
+#sub_det {
+    width: 100%;
+    padding: 20px 0;
+}
+
+#sub_det .frame {
+    width: 1000px;
+    height: auto;
+    font-size: 0;
+    margin: 0 auto;
+}
+
+#sub_det .frame .det_coffee {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    height: 500px;
+    padding: 10px;
+}
+
+#sub_det .frame .det_coffee .det_img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#sub_det .frame .det_coffee .det_img img {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+/*  */
+#sub_det .frame #det_box {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    min-height: 500px;
+    padding: 10px;
+    background: #dddddd;
+}
+
+#sub_det .frame #det_box .det_tit {
+    padding: 10px 0;
+}
+
+#sub_det .frame #det_box .det_tit h2 {
+    font-size: 24px;
+    color: #333333;
+}
+
+#sub_det .frame #det_box .det_tit p {
+    font-size: 20px;
+    color: #555555;
+    padding: 10px 0;
+}
+
+#sub_det .frame #det_box .det_price {
+    padding: 10px 0;
+    border-bottom: 1px solid #777777;
+}
+
+#sub_det .frame #det_box .det_price h4 {
+    font-size: 18px;
+    color: #555555;
+}
+
+#sub_det .frame #det_box .det_price h4 span {
+    color: #333333;
+    font-size: 22px;
+}
+
+#sub_det .frame #det_box .form_crush {
+    padding: 20px 0;
+    font-size: 0;
+}
+
+#sub_det .frame #det_box .form_crush label {
+    display: inline-block;
+    font-size: 18px;
+    color: #555555;
+    width: 120px;
+    vertical-align: middle;
+}
+
+#sub_det .frame #det_box .form_crush select {
+    display: inline-block;
+    width: calc(100% - 120px);
+    height: 40px;
+    padding: 10px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+#sub_det .frame #det_box .form_gram {
+    padding: 0 0 20px;
+    font-size: 0;
+}
+
+#sub_det .frame #det_box .form_gram label {
+    display: inline-block;
+    font-size: 18px;
+    color: #555555;
+    width: 120px;
+    vertical-align: middle;
+}
+
+#sub_det .frame #det_box .form_gram select {
+    display: inline-block;
+    width: calc(100% - 120px);
+    height: 40px;
+    padding: 10px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+#sub_det .frame #det_box ul {
+    padding: 10px 0;
+}
+
+#sub_det .frame #det_box ul .my_item {
+    background-color: #bbbbbb;
+    padding: 0 5px;
+    border-bottom: 1px solid #777777;/* 여기에 쓰니 길이가 똭! 맞는당 */
+}
+
+#sub_det .frame #det_box ul .my_item .det_count {
+    padding: 20px 0;
+    font-size: 0;
+}
+
+#sub_det .frame #det_box ul .my_item .det_count > div {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+}
+
+#sub_det .frame #det_box ul .my_item .det_count > div.det_count_tit {
+    width: 45%;
+    font-weight: 700;
+}
+
+#sub_det .frame #det_box ul .my_item .det_count > div.det_count_bx {
+    border: 1px solid #777777;
+    border-radius: 4px;
+    background: #ffffff;
+    margin: 0 5px;
+    font-size: 0;
+    overflow: hidden;
+}
+
+#sub_det .frame #det_box ul .my_item .det_count > div.det_count_bx a {
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    font-size: 16px;
+    color: #333333;
+    text-align: center;
+}
+
+#sub_det .frame #det_box ul .my_item .det_count > div.det_count_bx a:hover {
+    background: #dbdbdb;
+}
+
+#sub_det .frame #det_box ul .my_item .det_count > div.det_count_bx input {
+    width: 40px;
+    height: 25px;
+    line-height: 25px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+}
+
+#sub_det .frame #det_box ul .my_item .det_count > div.det_count_price {
+    width: calc(100% - 350px);
+    text-align: right;
+    font-weight: 700;
+}
+#sub_det .frame #det_box ul .my_item .det_count > div.det_count_price .each_price {}
+
+#sub_det .frame #det_box ul .my_item .det_count > div.item_del {
+    width: 5%;
+    text-align: right;
+}
+
+#sub_det .frame #det_box ul .my_item .det_count > div.item_del span {
+    display: block;
+    width: 16px;
+    height: 16px;
+    line-height: 1;
+    background: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#sub_det .frame #det_box .det_total_price {
+    padding: 20px 5px;
+}
+
+#sub_det .frame #det_box .det_total_price:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#sub_det .frame #det_box .det_total_price .total_price_tit {
+    float: left;
+    font-size: 20px;
+    font-weight: 700;
+}
+#sub_det .frame #det_box .det_total_price .total_price_num {
+    float: right;
+    font-size: 26px;
+    color: #ee3535;
+    font-weight: 700;
+}
